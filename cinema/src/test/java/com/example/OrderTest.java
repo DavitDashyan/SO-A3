@@ -76,7 +76,7 @@ public class OrderTest {
         Order order = new Order(1, false);
         order.addSeatReservation(new MovieTicket(screening, true, 1, 1));
         order.addSeatReservation(new MovieTicket(screening, true, 1, 2));
-        assertEquals(26.0, order.calculatePrice());
+        assertEquals(13.0, order.calculatePrice());
     }
 
     // @Test

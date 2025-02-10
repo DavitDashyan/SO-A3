@@ -51,7 +51,7 @@ public class OrderTest {
     @Test
     public void testMultipleStandardTicketsNoStudentWeekday() {
         Movie movie = new Movie("The Matrix");
-        MovieScreening screening = new MovieScreening(movie, LocalDateTime.now().plusDays(1), 10.0);
+        MovieScreening screening = new MovieScreening(movie, LocalDateTime.now().plusDays(1), 20.0);
         Order order = new Order(1, false);
         order.addSeatReservation(new MovieTicket(screening, false, 1, 1));
         order.addSeatReservation(new MovieTicket(screening, false, 1, 2));
